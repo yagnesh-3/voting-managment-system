@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Online Voting Management</title> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="voting.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Voting Portal</h1>
+        <form action="#" method="post">
+        
+            <h2>Choose Candidate:</h2>
+            
+            <div class="candidate-card">
+                <input type="radio" id="candidate1" name="candidate" value="candidate1">
+                <label for="candidate1" class="card">
+                    <div class="candidate-info">
+                        <h3 class="candidate-name">Jagan Mohan Reddy</h3>
+                        <p class="candidate-details">Age: 40, Experience: 10 years</p>
+                    </div>
+                </label>
+            </div>
+            <!-- Repeat the same structure for other candidates -->
+            <div class="candidate-card">
+                <input type="radio" id="candidate2" name="candidate" value="candidate2">
+                <label for="candidate2" class="card">
+                    <div class="candidate-info">
+                        <h3 class="candidate-name">Pawan Kalyan</h3>
+                        <p class="candidate-details">Age: 35, Experience: 8 years</p>
+                    </div>
+                </label>
+            </div>
+            <div class="candidate-card">
+                <input type="radio" id="candidate3" name="candidate" value="candidate3">
+                <label for="candidate3" class="card">
+                    <div class="candidate-info">
+                        <h3 class="candidate-name">ChandraBabu Naidu</h3>
+                        <p class="candidate-details">Age: 45, Experience: 12 years</p>
+                    </div>
+                </label>
+            </div>
+            <button type="submit">Vote</button>
+        </form>
+    </div>
+</body>
+</html>

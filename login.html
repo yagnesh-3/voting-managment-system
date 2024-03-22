@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <style>
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 35%;
+      justify-content: center;
+    }
+
+    #col1 {
+      flex: 2;
+      background-color: white;
+    }
+
+    #col2 {
+      flex: 7;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner {
+      flex: 1;
+      text-align: center;
+
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner {
+      text-align: center;
+      height: 33.33%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-color: white;
+      background-color: white;
+    }
+
+    .highlighted {
+      background-color: #512da8;
+      background: linear-gradient(to right, #5c6bc0, #512da8);
+      color: white;
+    }
+
+    button-on-click:active {
+      background-color: #512da8;
+      background: linear-gradient(to right, #5c6bc0, #512da8);
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var buttons = document.querySelectorAll('.inner');
+      buttons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          // Remove the 'highlighted' class from all buttons
+          buttons.forEach(function (btn) {
+            btn.classList.remove('highlighted');
+          });
+          // Add the 'highlighted' class to the clicked button
+          this.classList.add('highlighted');
+        });
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="col" id="col1">
+      <button name="user" class="inner" value="Admin">Administator</button>
+      <button name="user" class="inner" value = "user">User</button>
+      <button name="user" class="inner" value = "candidates">Candidate</button>
+    </div> -->
+    <div class="col" id="col2">
+      <div class="wrapper">
+        <div class="title"><span>Login Form</span></div>
+        <form method="post" action="./final.php">
+       
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" name="email" placeholder="Email or Phone" required>
+          </div>
+          <div class="row">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" placeholder="Password" required>
+          </div>
+          <div class="row">
+            <!-- <i class="fas fa-lock"></i> -->
+            <select name="user" id="" class="level">
+              <option value="select role" selected>-----select role---</option>
+              <option value="Administator">admin</option>
+              <option value="candidate">candidate</option>
+              <option value="user">user</option>
+            </select>
+          </div>
+          <div class="pass"><a href="#">Forgot password?</a></div>
+          <div class="row button">
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

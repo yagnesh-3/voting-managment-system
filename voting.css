@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-color: black; */
+    
+    /* background-repeat: no-repeat; */
+    /* background-size:60%; */
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url('img1.jpg');
+    border-radius: 7%;
+
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+h2 {
+    color: bisque;
+}
+
+.candidate-card {
+    margin-bottom: 20px;
+    background-color: beige;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.candidate-card:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.candidate-info {
+    padding-left: 15px;
+}
+
+.candidate-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.candidate-details {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+button {
+    width: 50%;
+    margin-left: 200px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004380;
+}
